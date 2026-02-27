@@ -37,18 +37,6 @@ Esta POC demonstra a aplicação prática desses recursos por meio de cenários 
 
 Esta Prova de Conceito contempla cenários que demonstram boas práticas, recursos avançados do Playwright e integração com pipelines modernos de testes automatizados.
 
-### [01] Page Object Model (POM) + Utils
-Organização do código de testes utilizando POM para melhor manutenibilidade, reutilização e separação de responsabilidades, com apoio de funções utilitárias compartilhadas.
-
-### [02] Testes Data-Driven
-Execução de testes orientados a dados, permitindo validação de múltiplos cenários a partir de diferentes conjuntos de entrada, aumentando a cobertura com baixo custo de manutenção.
-
-### [03] Autenticação com Storage State
-Reutilização de estado de autenticação por meio do storageState, reduzindo tempo de execução e evitando repetição de fluxos de login.
-
-### [04] Interceptação de APIs
-Uso de interceptação de rede para simular respostas de APIs e garantir maior previsibilidade e isolamento dos testes E2E.
-
 ### [05] Estrutura de Testes (com BDD e Playwright Puro)
 Implementação dos testes utilizando BDD ou a sintaxe nativa do Playwright Test, com foco em boa nomenclatura, legibilidade e fácil entendimento dos cenários.
 
