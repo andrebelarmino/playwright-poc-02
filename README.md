@@ -1,79 +1,79 @@
 # Playwright POC (Proof of Concept)
 
-### Quando usar Playwright
-- Ideal para equipes modernas que buscam automação de testes E2E escalável, confiável e preparada para aplicações web modernas, com execução local e integração nativa com pipelines CI/CD em nuvem.
+### When to use Playwright
+- Ideal for modern teams seeking scalable, reliable E2E test automation ready for modern web applications, with local execution and native integration with cloud CI/CD pipelines.
 
-### Pontos fortes
-- Automação E2E completa, com execução paralela e escalável.
-- Suporte nativo a múltiplos navegadores (Chromium, Firefox e WebKit/Safari).
-- Recursos avançados de depuração (trace viewer, screenshots, vídeos).
-- Arquitetura moderna, preparada para evolução contínua e novos cenários de teste.
+### Strengths
+- Complete E2E automation, with parallel and scalable execution.
+- Native support for multiple browsers (Chromium, Firefox, and WebKit/Safari).
+- Advanced debugging features (trace viewer, screenshots, videos).
+- Modern architecture, ready for continuous evolution and new testing scenarios.
 
-### Limitações
-- Não automatiza aplicativos móveis nativos (apenas emulação de navegadores mobile).
-- Possui curva de aprendizado inicial, especialmente em paralelização, isolamento de contexto e uso avançado de seletores.
-- Comunidade menor que Selenium, porém em rápido crescimento e com forte suporte oficial da Microsoft.
+### Limitations
+- Does not automate native mobile applications (only mobile browser emulation).
+- Has an initial learning curve, especially in parallelization, context isolation, and advanced use of selectors.
+- Smaller community than Selenium, but growing rapidly and with strong official support from Microsoft.
 
-### Pontos de destaque
-- Espera automática inteligente, reduzindo a necessidade de waitFor manuais.
-- Interceptação e simulação de rede para testes de APIs e cenários complexos.
-- Visualizador de rastreamento (trace viewer) integrado, facilitando a depuração.
-- Suporte a múltiplas linguagens (JavaScript, TypeScript, Python, C#, Java).
-- Execução paralela nativa, sem necessidade de grid.
-
-<br/>
-
----
-<br/>
-
-Esta POC demonstra a aplicação prática desses recursos por meio de cenários E2E, explorando paralelização, isolamento de contexto e estratégias modernas de automação.
+### Highlights
+- Intelligent automatic waiting, reducing the need for manual waitFor.
+- Network interception and simulation for API testing and complex scenarios.
+- Integrated trace viewer, facilitating debugging.
+- Support for multiple languages (JavaScript, TypeScript, Python, C#, Java).
+- Native parallel execution, no grid required.
 
 <br/>
 
 ---
 <br/>
 
-# Cenários propostos
-
-Esta Prova de Conceito contempla cenários que demonstram boas práticas, recursos avançados do Playwright e integração com pipelines modernos de testes automatizados.
-
-### [05] Estrutura de Testes (com BDD e Playwright Puro)
-Implementação dos testes utilizando BDD ou a sintaxe nativa do Playwright Test, com foco em boa nomenclatura, legibilidade e fácil entendimento dos cenários.
-
-### [06] Geração Automática de Relatórios
-Geração automática de relatórios de execução (HTML/trace), facilitando a análise de resultados e a identificação de falhas.
-
-### [07] Integração Contínua com Jenkins
-Execução automatizada dos testes em pipeline CI, demonstrando integração com Jenkins e preparo para execução em ambientes de nuvem.
+This POC demonstrates the practical application of these resources through E2E scenarios, exploring parallelization, context isolation, and modern automation strategies.
 
 <br/>
 
 ---
 <br/>
 
-Observação: Todos os cenários foram desenvolvidos em TypeScript, explorando tipagem estática, melhor organização do código e maior confiabilidade durante o desenvolvimento dos testes. Essa escolha visa aumentar a robustez da automação, reduzir erros em tempo de desenvolvimento e facilitar a escalabilidade da solução.
+# Proposed scenarios
+
+This Proof of Concept covers scenarios that demonstrate best practices, advanced Playwright features, and integration with modern automated testing pipelines.
+
+### [05] Test Structure (with BDD and Pure Playwright)
+Implementation of tests using BDD or the native Playwright Test syntax, with a focus on good nomenclature, readability, and easy understanding of scenarios.
+
+### [06] Automatic Report Generation
+Automatic generation of execution reports (HTML/trace), facilitating the analysis of results and the identification of failures.
+
+### [07] Continuous Integration with Jenkins
+Automated execution of tests in CI pipeline, demonstrating integration with Jenkins and readiness for execution in cloud environments.
 
 <br/>
 
 ---
 <br/>
 
-# Comandos úteis
+Note: All scenarios were developed in TypeScript, leveraging static typing, better code organization, and greater reliability during test development. This choice aims to increase automation robustness, reduce errors during development, and facilitate solution scalability.
 
-### Bloqueio de execução do npm em Terminal no VS Code:
+<br/>
+
+---
+<br/>
+
+# Useful commands
+
+### Blocking npm execution in Terminal in VS Code:
 Get-ExecutionPolicy       
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned  
 
-### Geração de Código:
+### Code generation:
 npx playwright codegen
 
-### Execução:
+### Execution:
 npx playwright test
 
-### Execução em UI:
+### Execution in UI:
 npx playwright test --ui
 
-### Execução em Debug:
+### Execution in Debug:
 npx playwright test --ui --debug
 
 <br/>
@@ -81,7 +81,7 @@ npx playwright test --ui --debug
 ---
 <br/>
 
-### Para rodar POC:
+### To run POC:
 npm test
 
 <br/>
